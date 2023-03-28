@@ -1,0 +1,12 @@
+To solve the given problem, we can use the A* search algorithm, which is a widely used algorithm in pathfinding and graph traversal.
+It is a heuristic search algorithm that finds the shortest path between a given start node and end node.
+
+Here is the algorithm we can use to solve the given problem:
+
+Define the grid and the drone objects with their starting and ending positions.
+For each drone, calculate the time taken to reach its destination using the Manhattan distance between the starting and ending positions, assuming the drone moves only in the 4-adjacent directions.
+Sort the list of drones in increasing order of their start time.
+For each drone, run the A* search algorithm to find the shortest path from its starting position to the destination position, taking into account the positions of all other drones at each time step. To avoid collisions, we can add a penalty to the cost function for each node that is occupied by another drone at that time step.
+Store the path for each drone and move on to the next drone until all drones have been processed.
+Output the paths for each drone.
+To simulate the algorithm, we can use a programming language like Python and implement the A* search algorithm using a suitable data structure like a priority queue or heap. We can visualize the paths of the drones on a 2D grid using a library like Matplotlib or Pygame. We can also test the algorithm with different inputs and compare the results with the expected outputs to verify its correctness.
